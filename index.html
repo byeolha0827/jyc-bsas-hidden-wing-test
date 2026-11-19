@@ -125,4 +125,36 @@ document.getElementById('copyAccount').addEventListener('click',()=>eventCopy('@
 document.getElementById('copyAll').addEventListener('click',()=>eventCopy('#숨겨진날개테스트 #BSAS @shjyc0924'));
 document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setTimeout(eventLanguage,0)));eventLanguage();
 
-</script></body></html>
+</script>
+<script>
+const SUPABASE_URL = 'https://apqgmcdkcticpfzwcogj.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_qAjty4U30JGdad96wAPAGA_ylyuQU21';
+
+async function saveBirdResult(birdIndex) {
+  try {
+    const response = await fetch(
+      `${SUPABASE_URL}/rest/v1/bird_results`,
+      {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_KEY,
+          'Authorization': `Bearer ${SUPABASE_KEY}`,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({
+          bird_index: birdIndex
+        })
+      }
+    );
+
+    if (!response.ok) {
+      console.error('결과 저장 실패:', response.status, await response.text());
+    }
+  } catch (error) {
+    console.error('Supabase 연결 오류:', error);
+  }
+}
+</script>
+</body>
+</html>
