@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>B.S.A.S. | 관리자 통계</title>
 <style>
-:root{font-family:system-ui,-apple-system,'Noto Sans KR',sans-serif;color:#1e3430;background:#f4f8f3}*{box-sizing:border-box}body{margin:0}main{max-width:1050px;margin:0 auto;padding:32px 18px 80px}.head{display:flex;justify-content:space-between;align-items:center;gap:16px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;color:#55936c}h1{margin:7px 0 6px;font-size:clamp(24px,4vw,34px)}p{color:#61746a}section,.stat{background:white;border:1px solid #e2eae0;border-radius:19px;padding:25px;box-shadow:0 8px 28px #233f2410}.login{max-width:440px;margin:65px auto}label{display:block;font-size:13px;font-weight:700;margin:18px 0 7px}input{width:100%;padding:13px;border:1px solid #cdd9ce;border-radius:10px;font:inherit}button{border:0;border-radius:11px;padding:12px 19px;background:#38875d;color:white;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.6;cursor:wait}.ghost{background:#e6efe8;color:#276c47}.login button{width:100%;margin-top:20px}.error{color:#bd3636;font-size:13px;white-space:pre-wrap}.muted{font-size:13px;color:#74857a}.hidden{display:none!important}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:22px 0}.stat strong{display:block;font-size:29px;margin-top:10px}.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}.bar-row{display:grid;grid-template-columns:125px 1fr 45px;align-items:center;gap:10px;margin:12px 0;font-size:13px}.bar-bg{height:12px;background:#edf3ec;border-radius:99px;overflow:hidden}.bar{height:100%;background:#71b98a;border-radius:99px}.bar-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.actions{display:flex;gap:9px;align-items:center}.status{font-size:12px;color:#63806e}.bird-detail{font-size:12px;color:#496c56;line-height:1.65}.bird-detail span{display:inline-block;margin:2px 5px 2px 0;padding:3px 8px;background:#edf5ed;border-radius:8px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;padding:11px 6px;border-bottom:1px solid #eef1ec}th{color:#738376}footer{margin-top:20px;font-size:12px;color:#87998d}@media(max-width:700px){.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.stat strong{font-size:24px}.bar-row{grid-template-columns:110px 1fr 32px}}
+:root{font-family:system-ui,-apple-system,'Noto Sans KR',sans-serif;color:#1e3430;background:#f4f8f3}*{box-sizing:border-box}body{margin:0}main{max-width:1050px;margin:0 auto;padding:32px 18px 80px}.head{display:flex;justify-content:space-between;align-items:center;gap:16px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;color:#55936c}h1{margin:7px 0 6px;font-size:clamp(24px,4vw,34px)}p{color:#61746a}section,.stat{background:white;border:1px solid #e2eae0;border-radius:19px;padding:25px;box-shadow:0 8px 28px #233f2410}.login{max-width:440px;margin:65px auto}label{display:block;font-size:13px;font-weight:700;margin:18px 0 7px}input{width:100%;padding:13px;border:1px solid #cdd9ce;border-radius:10px;font:inherit}button{border:0;border-radius:11px;padding:12px 19px;background:#38875d;color:white;font:inherit;font-weight:700;cursor:pointer}button:disabled{opacity:.6;cursor:wait}.ghost{background:#e6efe8;color:#276c47}.login button{width:100%;margin-top:20px}.error{color:#bd3636;font-size:13px;white-space:pre-wrap}.muted{font-size:13px;color:#74857a}.hidden{display:none!important}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:22px 0}.stat strong{display:block;font-size:29px;margin-top:10px}.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}.bar-row{display:grid;grid-template-columns:125px 1fr 45px;align-items:center;gap:10px;margin:12px 0;font-size:13px}.bar-bg{height:12px;background:#edf3ec;border-radius:99px;overflow:hidden}.bar{height:100%;background:#71b98a;border-radius:99px}.bar-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.danger{background:#fff0ef;color:#a53232;border:1px solid #e8c0bb}.danger:hover{background:#ffe1de}.reset-panel{margin-top:18px}.reset-actions{display:flex;gap:10px;align-items:end;flex-wrap:wrap}.reset-actions>div{min-width:180px}.reset-actions select{width:100%;padding:11px;border:1px solid #cdd9ce;border-radius:10px;background:white;font:inherit}.warning{color:#9b4640;font-size:13px;line-height:1.6}.reset-status{font-size:13px;white-space:pre-wrap}.status{font-size:12px;color:#63806e}.bird-detail{font-size:12px;color:#496c56;line-height:1.65}.bird-detail span{display:inline-block;margin:2px 5px 2px 0;padding:3px 8px;background:#edf5ed;border-radius:8px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;padding:11px 6px;border-bottom:1px solid #eef1ec}th{color:#738376}footer{margin-top:20px;font-size:12px;color:#87998d}@media(max-width:700px){.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.stat strong{font-size:24px}.bar-row{grid-template-columns:110px 1fr 32px}}
 </style></head><body><main>
 <div class="head"><div><div class="eyebrow">B.S.A.S. · HIDDEN WINGS</div><h1>관리자 통계 대시보드</h1><p>숨겨진 날개 테스트 참여 현황</p></div><div class="actions"><button id="refreshTop" class="ghost hidden">↻ 새로고침</button><button id="logout" class="ghost hidden">로그아웃</button></div></div>
 <section id="login" class="login"><h2>관리자 로그인 🔐</h2><p class="muted">Supabase에 등록된 관리자 계정으로 로그인하세요.</p><form id="loginForm"><label for="email">이메일</label><input id="email" type="email" autocomplete="username" required><label for="password">비밀번호</label><input id="password" type="password" autocomplete="current-password" required><button id="loginBtn">로그인</button></form><p id="loginError" class="error" role="alert"></p></section>
-<div id="dashboard" class="hidden"><div class="stats"><div class="stat"><span class="muted">총 검사 완료</span><strong id="total">-</strong></div><div class="stat"><span class="muted">결과가 나온 새 유형</span><strong id="types">-</strong></div><div class="stat"><span class="muted">최다 결과 유형</span><strong id="top">-</strong></div></div><div class="grid"><section><h2>🐦 새 유형별 검사 결과</h2><p class="muted">숨겨진 날개 테스트 · 16종 새</p><div id="bars"></div></section><section><h2>📅 날짜별 검사 완료</h2><p class="muted">한국 시간 기준</p><table><thead><tr><th>날짜</th><th>완료 건수</th><th>새 유형별 결과</th></tr></thead><tbody id="daily"></tbody></table></section></div><footer>데이터는 Supabase에서 불러옵니다. <button class="ghost" id="refresh">↻ 새로고침</button> <span id="updatedAt" class="status"></span></footer><p id="dataError" class="error" role="alert"></p></div>
+<div id="dashboard" class="hidden"><div class="stats"><div class="stat"><span class="muted">총 검사 완료</span><strong id="total">-</strong></div><div class="stat"><span class="muted">결과가 나온 새 유형</span><strong id="types">-</strong></div><div class="stat"><span class="muted">최다 결과 유형</span><strong id="top">-</strong></div></div><div class="grid"><section><h2>🐦 새 유형별 검사 결과</h2><p class="muted">숨겨진 날개 테스트 · 16종 새</p><div id="bars"></div></section><section><h2>📅 날짜별 검사 완료</h2><p class="muted">한국 시간 기준</p><table><thead><tr><th>날짜</th><th>완료 건수</th><th>새 유형별 결과</th></tr></thead><tbody id="daily"></tbody></table></section></div><section class="reset-panel"><h2>🗑 검사 기록 관리</h2><p class="warning">초기화하면 Supabase에 저장된 검사 기록이 영구 삭제됩니다. 복구할 수 없으니 캠페인 시작 전 테스트 기록 정리 등 꼭 필요한 경우에만 사용하세요.</p><div class="reset-actions"><div><label for="resetDate">초기화할 날짜 (한국 시간)</label><select id="resetDate"><option value="">날짜 선택</option></select></div><button type="button" class="danger" id="resetDay">선택 날짜 초기화</button><button type="button" class="danger" id="resetAll">전체 결과 초기화</button></div><p id="resetStatus" class="reset-status" role="status"></p></section><footer>데이터는 Supabase에서 불러옵니다. <button class="ghost" id="refresh">↻ 새로고침</button> <span id="updatedAt" class="status"></span></footer><p id="dataError" class="error" role="alert"></p></div>
 </main><script>
 'use strict';
 // 공개 가능한 Supabase 프로젝트 URL과 publishable key만 사용합니다.
@@ -14,10 +14,10 @@ const SUPABASE_URL='https://apqgmcdkcticpfzwcogj.supabase.co';
 const SUPABASE_KEY='sb_publishable_qAjty4U30JGdad96wAPAGA_ylyuQU21';
 const $=id=>document.getElementById(id);
 const BIRD_NAMES=['왜가리','멧비둘기','중대백로','저어새','꿩','민물가마우지','알락꼬리마도요','곤줄박이','붉은머리오목눈이','흰뺨검둥오리','참새','까치','검은머리물떼새','큰부리까마귀','제비','괭이갈매기'];
-let accessToken=null;
+let accessToken=null;let cachedRows=[];let cachedDates={};
 async function api(path,opts={}){const res=await fetch(SUPABASE_URL+path,{...opts,headers:{apikey:SUPABASE_KEY,...(accessToken?{Authorization:'Bearer '+accessToken}:{}),'Content-Type':'application/json',...opts.headers}});const txt=await res.text();let data;try{data=txt?JSON.parse(txt):null}catch{data=txt}if(!res.ok)throw new Error((data&&data.message)||`HTTP ${res.status}`);return data}
 function showDashboard(){ $('login').classList.add('hidden');$('dashboard').classList.remove('hidden');$('logout').classList.remove('hidden');$('refreshTop').classList.remove('hidden') }
-function showLogin(){accessToken=null;$('dashboard').classList.add('hidden');$('logout').classList.add('hidden');$('refreshTop').classList.add('hidden');$('login').classList.remove('hidden');$('password').value=''}
+function showLogin(){accessToken=null;$('dashboard').classList.add('hidden');$('logout').classList.add('hidden');$('refreshTop').classList.add('hidden');$('login').classList.remove('hidden');$('password').value='';cachedRows=[];cachedDates={}}
 async function loadStats(){
 $('dataError').textContent='';
 for(const id of ['refresh','refreshTop'])$(id).disabled=true;
@@ -25,7 +25,7 @@ try{
 // Supabase RLS ensures only authorized admins can read these rows.
 const all=[];let from=0;const pageSize=1000;
 while(true){const batch=await api(`/rest/v1/bird_results?select=id,bird_index,completed_at&order=id.asc&offset=${from}&limit=${pageSize}`);all.push(...batch);if(batch.length<pageSize)break;from+=pageSize;if(from>100000)throw new Error('데이터가 많습니다. 통계 API를 별도로 구성해 주세요.')}
-const counts=Array(16).fill(0),dates={};
+cachedRows=all;const counts=Array(16).fill(0),dates={};
 const dateFmt=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'});
 for(const r of all){const n=Number(r.bird_index);if(!Number.isInteger(n)||n<0||n>=16)continue;counts[n]++;const d=dateFmt.format(new Date(r.completed_at));if(!dates[d])dates[d]={total:0,counts:Array(16).fill(0)};dates[d].total++;dates[d].counts[n]++}
 $('total').textContent=all.length.toLocaleString('ko-KR')+'건';
@@ -35,10 +35,40 @@ $('bars').replaceChildren();counts.forEach((n,i)=>{const row=document.createElem
 $('daily').replaceChildren();
 Object.keys(dates).sort().reverse().forEach(d=>{const tr=document.createElement('tr'),a=document.createElement('td'),b=document.createElement('td'),c=document.createElement('td');a.textContent=d;b.textContent=dates[d].total+'건';c.className='bird-detail';dates[d].counts.forEach((n,i)=>{if(n){const chip=document.createElement('span');chip.textContent=`${BIRD_NAMES[i]} ${n}건`;c.append(chip)}});tr.append(a,b,c);$('daily').append(tr)});
 if(!all.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=3;td.textContent='아직 검사 결과가 없습니다.';tr.append(td);$('daily').append(tr)}
+cachedDates=dates;const dateSelect=$('resetDate'),oldDate=dateSelect.value;dateSelect.replaceChildren(new Option('날짜 선택',''));Object.keys(dates).sort().reverse().forEach(d=>dateSelect.add(new Option(`${d} (${dates[d].total}건)`,d)));if(dates[oldDate])dateSelect.value=oldDate;
 $('updatedAt').textContent='마지막 갱신: '+new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',second:'2-digit'}).format(new Date());
 }catch(e){$('dataError').textContent='통계 조회 실패: '+e.message+' (관리자 SELECT 권한과 정책을 확인하세요.)'}
 finally{for(const id of ['refresh','refreshTop'])$(id).disabled=false}
 }
 $('loginForm').addEventListener('submit',async e=>{e.preventDefault();$('loginError').textContent='';$('loginBtn').disabled=true;try{const session=await api('/auth/v1/token?grant_type=password',{method:'POST',body:JSON.stringify({email:$('email').value.trim(),password:$('password').value})});accessToken=session.access_token;const membership=await api('/rest/v1/bird_admins?select=user_id&limit=1');if(!Array.isArray(membership)||membership.length===0)throw new Error('관리자 권한이 없는 계정입니다.');showDashboard();await loadStats()}catch(err){showLogin();$('loginError').textContent='로그인 실패: '+err.message}finally{$('loginBtn').disabled=false}});
+async function resetRecords(mode){
+ const day=$('resetDate').value;
+ if(mode==='day'&&!day){$('resetStatus').textContent='먼저 초기화할 날짜를 선택해 주세요.';return}
+ const dateFmt=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'});
+ const rows=mode==='all'?cachedRows:cachedRows.filter(r=>dateFmt.format(new Date(r.completed_at))===day);
+ if(!rows.length){$('resetStatus').textContent='삭제할 기록이 없습니다.';return}
+ const target=mode==='all'?'전체 검사 기록':day+' 검사 기록';
+ if(!confirm(`${target} ${rows.length}건을 영구 삭제하시겠습니까?\n삭제한 데이터는 복구할 수 없습니다.`))return;
+ const typed=prompt(`실수로 삭제하는 것을 방지하기 위해 '삭제'를 입력해 주세요.\n대상: ${target} (${rows.length}건)`);
+ if(typed!=='삭제'){$('resetStatus').textContent='초기화가 취소됐습니다.';return}
+ const buttons=['resetAll','resetDay','refresh','refreshTop'];buttons.forEach(id=>$(id).disabled=true);
+ $('resetStatus').textContent=`${target} 삭제 중…`;
+ let deleted=0;
+ try{
+   // Row IDs are selected from an authenticated, RLS-protected read. DELETE is independently restricted by RLS.
+   for(let i=0;i<rows.length;i+=100){
+     const ids=rows.slice(i,i+100).map(r=>Number(r.id));
+     if(ids.some(id=>!Number.isSafeInteger(id)))throw new Error('삭제 대상 ID를 확인할 수 없습니다.');
+     const encoded=encodeURIComponent('('+ids.join(',')+')');
+     await api('/rest/v1/bird_results?id=in.'+encoded,{method:'DELETE',headers:{Prefer:'return=minimal'}});
+     deleted+=ids.length;
+   }
+   $('resetStatus').textContent=`${target} ${deleted}건 삭제 요청 완료. 최신 통계를 다시 확인해 주세요.`;
+   await loadStats();
+ }catch(err){$('resetStatus').textContent=`초기화 실패: ${err.message} (삭제 요청 ${deleted}건 처리 후 중단됨. 새로고침하여 실제 건수를 확인하세요.)`;await loadStats()}
+ finally{buttons.forEach(id=>$(id).disabled=false)}
+}
+$('resetAll').addEventListener('click',()=>resetRecords('all'));
+$('resetDay').addEventListener('click',()=>resetRecords('day'));
 $('logout').addEventListener('click',showLogin);$('refresh').addEventListener('click',loadStats);$('refreshTop').addEventListener('click',loadStats);
 </script></body></html>
